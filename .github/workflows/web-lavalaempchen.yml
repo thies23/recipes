@@ -13,6 +13,6 @@ jobs:
       - name: Send repository_dispatch event to Frontend-Repo
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: ${{ secrets.FRONTEND_TRIGGER_TOKEN }}
+          token: ${{ secrets.FRONTEND_TRIGGER_TOKEN2 }}
           repository: lavalaempchen/recipe-web
           event-type: trigger-deploy
